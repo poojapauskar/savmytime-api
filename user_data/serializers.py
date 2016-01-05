@@ -37,7 +37,7 @@ class User_dataSerializer(serializers.ModelSerializer):
         r = send_message(sid, token,
             sms_from='09243422233',  # sms_from='8808891988',
             sms_to=validated_data.get('phone'), # sms_to='9052161119',
-            sms_body='SAVMYTIME Service Request: '+validated_data.get('name')+' has requested a service from SAVMYTIME. The email address provided is '+validated_data.get('email')+' and the mobile number is '+validated_data.get('phone')+'.'
+            sms_body='SAVMYTIME Service Request: '+validated_data.get('name')+' has requested a service from SAVMYTIME. The email address provided is '+validated_data.get('email')+' and the mobile number is '+validated_data.get('phone')+'.',
         print r.status_code
         pprint(r.json())
 
