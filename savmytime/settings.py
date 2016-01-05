@@ -37,6 +37,13 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'services',
+    'cities',
+    'category',
+    'sub_category',
+    'user_data',
+    'service_providers',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -74,10 +81,23 @@ WSGI_APPLICATION = 'savmytime.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+
+#development
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbges8fuovp2id',                      
+        'USER': 'appveonmvedwjg',
+        'PASSWORD': 'xcXxAuk64M-LTqIlCYzkIZKu80',
+        'HOST': 'ec2-54-83-59-203.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -102,9 +122,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-# Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+if os.environ.get('DATABASE_URL', None):
+    import dj_database_url
+    DATABASES['default'] = dj_database_url.config()
+
+
+DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
