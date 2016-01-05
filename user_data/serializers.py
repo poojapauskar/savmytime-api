@@ -12,6 +12,10 @@ class User_dataSerializer(serializers.ModelSerializer):
         Create and return a new `Snippet` instance, given the validated data.
         """
 
+        from pprint import pprint
+        import requests
+        from django.conf import settings
+
         sid = 'bitjini'
         token = '85dbbbc18dfaf078290eeee3c185ac6dfd8a208f'
 
@@ -29,10 +33,20 @@ class User_dataSerializer(serializers.ModelSerializer):
         # 'From' doesn't matter; For transactional, this will be replaced with your SenderId;
         # For promotional, this will be ignored by the SMS gateway
         # Incase you are wondering who Dr. Rajasekhar is http://en.wikipedia.org/wiki/Dr._Rajasekhar_(actor)
+
+        if (validated_data.get('name'))=='': 
+            if (validated_data.get('email'))=='':
+                msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME."
+            else:
+                msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME. The email address provided is "+validated_data.get('email')+"."        
+        else:
+            msg="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone number provided is "+validated_data.get('phone')+" and the email address provided is "+validated_data.get('email')+"."
+        
+
         r = send_message(sid, token,
             sms_from='09243422233',  # sms_from='8808891988',
             sms_to=validated_data.get('phone'), # sms_to='9052161119',
-            sms_body='SAVMYTIME Service Request: '+validated_data.get('name')+' has requested a service from SAVMYTIME. The email address provided is '+validated_data.get('email')+' and the mobile number is '+validated_data.get('phone')+'.')
+            sms_body=msg)
         print r.status_code
         pprint(r.json())
 
