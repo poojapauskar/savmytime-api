@@ -34,14 +34,19 @@ class User_dataSerializer(serializers.ModelSerializer):
         # For promotional, this will be ignored by the SMS gateway
         # Incase you are wondering who Dr. Rajasekhar is http://en.wikipedia.org/wiki/Dr._Rajasekhar_(actor)
 
-        if (validated_data.get('name'))=='': 
-            if (validated_data.get('email'))=='':
-                msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME."
-            else:
-                msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME. The email address provided is "+validated_data.get('email')+"."        
-        else:
-            msg="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone number provided is "+validated_data.get('phone')+" and the email address provided is "+validated_data.get('email')+"."
+        # msg="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone number provided is "+validated_data.get('phone')+" and the email address provided is "+validated_data.get('email')+"."
         
+
+        if (validated_data.get('name')=='' & validated_data.get('email')==''): 
+                msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME."
+        if(validated_data.get('name')=='' & validated_data.get('email')!=''):
+                msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME. The email address provided is "+validated_data.get('email')+"."        
+        if(validated_data.get('email')=='' & validated_data.get('name')!=''):
+                msg="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone address provided is "+validated_data.get('phone')+"."        
+        if(validated_data.get('email')!='' & validated_data.get('name')!=''):
+                msg="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone number provided is "+validated_data.get('phone')+" and the email address provided is "+validated_data.get('email')+"."
+        
+         
 
         r = send_message(sid, token,
             sms_from='09243422233',  # sms_from='8808891988',
