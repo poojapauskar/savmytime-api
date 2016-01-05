@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from service_providers.models import Service_providers, LANGUAGE_CHOICES, STYLE_CHOICES
+from service_providers.models import Service_providers
 
 
 class Service_providersSerializer(serializers.ModelSerializer):

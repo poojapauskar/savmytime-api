@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from sub_category.models import Sub_category, LANGUAGE_CHOICES, STYLE_CHOICES
+from sub_category.models import Sub_category
 
 
 class Sub_categorySerializer(serializers.ModelSerializer):

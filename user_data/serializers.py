@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from user_data.models import User_data, LANGUAGE_CHOICES, STYLE_CHOICES
+from user_data.models import User_data
 
 
 class User_dataSerializer(serializers.ModelSerializer):

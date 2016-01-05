@@ -1,7 +1,5 @@
 from rest_framework import serializers
-from cities.models import Cities, LANGUAGE_CHOICES, STYLE_CHOICES
-
-
+from cities.models import Cities
 class CitiesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cities
