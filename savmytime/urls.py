@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^', include('user_data.urls')),
     url(r'^', include('service_providers.urls')),
     url(r'^', include('upload_image.urls')),
+    url(r'^', include('get_details.urls')),
 ]

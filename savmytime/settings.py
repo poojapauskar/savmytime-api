@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'user_data',
     'service_providers',
     'upload_image',
+    'get_details',
 )
 
 MIDDLEWARE_CLASSES = (
