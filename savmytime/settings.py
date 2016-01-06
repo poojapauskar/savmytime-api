@@ -44,6 +44,7 @@ INSTALLED_APPS = (
     'sub_category',
     'user_data',
     'service_providers',
+    'upload_image',
 )
 
 MIDDLEWARE_CLASSES = (
