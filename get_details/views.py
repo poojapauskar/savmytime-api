@@ -1,6 +1,7 @@
 from services.models import Services
 from category.models import Category
 from sub_category.models import Sub_category
+from cities.models import Cities
 from get_details.serializers import Get_detailsSerializer
 from rest_framework import generics
 # from ticket.permissions import IsOwnerOrReadOnly
@@ -75,8 +76,8 @@ class CustomListView(ListView):
           c_detail=Category.objects.get(id=c.id)
           #user_details=[]
           sub_category_list=Sub_category.objects.filter(category_id=c.id).values('sub_category','id')
-          print >> sys.stderr, sub_category_list
-          print >> sys.stderr, "----------"
+          # print >> sys.stderr, sub_category_list
+          # print >> sys.stderr, "----------"
 
           # sub_category = []
           # for s in sub_category_list:
@@ -96,6 +97,18 @@ class CustomListView(ListView):
                    }
                 )
 
+      cities=[]
+      city_details=list(Cities.objects.all())
+      for cd in city_details:
+        if service_id in cd.service_list:
+          cities.append(
+                 {
+                  'name':cd.city,
+                  'id':cd.id,
+                 }
+
+            )
+
       s_detail=Services.objects.get(id=service_id)
       service = []
       service.append(
@@ -104,6 +117,7 @@ class CustomListView(ListView):
                    'name': s_detail.service,
                    'image':s_detail.image,
                    'description':s_detail.description,
+                   'cities':cities,
                    'category':list(category),  
                    }
                 )
