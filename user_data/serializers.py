@@ -37,16 +37,39 @@ class User_dataSerializer(serializers.ModelSerializer):
         # msg="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone number provided is "+validated_data.get('phone')+" and the email address provided is "+validated_data.get('email')+"."
         
 
-        # if (validated_data.get('name')=='' & validated_data.get('email')==''): 
-        #         msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME."
-        # if(validated_data.get('name')=='' & validated_data.get('email')!=''):
-        #         msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME. The email address provided is "+validated_data.get('email')+"."        
-        # if(validated_data.get('email')=='' & validated_data.get('name')!=''):
-        #         msg="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone address provided is "+validated_data.get('phone')+"."        
-        # if(validated_data.get('email')!='' & validated_data.get('name')!=''):
-        #         msg="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone number provided is "+validated_data.get('phone')+" and the email address provided is "+validated_data.get('email')+"."
+
+        import sys
+
+        if (validated_data.get('name')==None):
+            if(validated_data.get('email')==None):
+                msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME."
+            else:
+                msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME. The email address provided is "+validated_data.get('email')+"."        
+
+        if (validated_data.get('email')==None):
+            if(validated_data.get('name')==None):
+                msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME."
+            else:
+                msg="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone number provided is "+validated_data.get('phone')+"."        
+
+        if (validated_data.get('name')!=None):
+            if (validated_data.get('email')!=None):
+                msg="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone number provided is "+validated_data.get('phone')+" and the email address provided is "+validated_data.get('email')+"."
         
-        msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME."
+
+        # if (validated_data.get('name')==None & validated_data.get('email')==None): 
+        #         msg1="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME."
+        # if(validated_data.get('name')==None & validated_data.get('email')!=None):
+        #         msg1="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME. The email address provided is "+validated_data.get('email')+"."        
+        # if(validated_data.get('email')==None & validated_data.get('name')!=None):
+        #         msg1="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone address provided is "+validated_data.get('phone')+"."        
+        # if(validated_data.get('email')!=None & validated_data.get('name')!=None):
+        #         msg1="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone number provided is "+validated_data.get('phone')+" and the email address provided is "+validated_data.get('email')+"."
+        import sys
+        print >> sys.stderr, msg
+
+
+        # msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME."
         
 
         r = send_message(sid, token,
