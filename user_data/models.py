@@ -13,6 +13,8 @@ class User_data(models.Model):
     service = models.CharField(max_length=100, blank=False, default='')
     category = models.CharField(max_length=100, blank=False, default='')
     sub_category = models.CharField(max_length=100, blank=False, default='')
+    is_admin = models.CharField(max_length=100, blank=False, default='')
+    password = models.CharField(max_length=100, blank=False, default='')
     
    
     class Meta:

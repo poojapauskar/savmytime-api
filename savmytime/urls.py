@@ -25,4 +25,7 @@ urlpatterns = [
     url(r'^', include('service_providers.urls')),
     url(r'^', include('upload_image.urls')),
     url(r'^', include('get_details.urls')),
+    url(r'^', include('is_admin_login.urls')),
+    url(r'^', include('get_services.urls')),
+    url(r'^', include('get_sub_category_details.urls')),
 ]

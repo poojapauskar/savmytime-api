@@ -5,7 +5,7 @@ from sub_category.models import Sub_category
 class Sub_categorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Sub_category
-        fields = ('id', 'sub_category', 'category_id')
+        fields = ('id', 'sub_category', 'category_id','price','description')
 
     def create(self, validated_data):
         """

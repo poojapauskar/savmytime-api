@@ -46,6 +46,9 @@ INSTALLED_APPS = (
     'service_providers',
     'upload_image',
     'get_details',
+    'is_admin_login',
+    'get_services',
+    'get_sub_category_details',
 )
 
 MIDDLEWARE_CLASSES = (

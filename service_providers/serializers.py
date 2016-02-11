@@ -5,7 +5,7 @@ from service_providers.models import Service_providers
 class Service_providersSerializer(serializers.ModelSerializer):
     class Meta:
         model = Service_providers
-        fields = ('id','service_id', 'name', 'phone', 'email','city','address')
+        fields = ('id','name', 'phone', 'email','city','address')
 
     def create(self, validated_data):
         """

@@ -45,8 +45,7 @@ class Upload_imageSerializer(serializers.ModelSerializer):
         if(bool(validated_data.get('photo')) == True):
          link=public_id+".jpg"
 
-       
-
+        
         
        
         #print >> sys.stderr, validated_data.get('photo')
