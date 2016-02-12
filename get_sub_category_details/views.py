@@ -65,10 +65,30 @@ class CustomListView(ListView):
       import sys
       # print >> sys.stderr, service_id
          
-      sub_category_details= list(Sub_category.objects.filter(id=sub_category_id).values('sub_category','id'))
+      sub_category_details= Sub_category.objects.filter(id=sub_category_id)
       #tickets = Ticket.objects.filter(vz_id__in=contacts)
       # print >> sys.stderr, objects
+      sub_category=[]
+
+      for s in sub_category_details:
+        c=Category.objects.get(id=s.category_id)
+        service_obj=Services.objects.get(id=c.service_id)
+     
+        # service=list(Services.objects.filter(id=service_id))
+        sub_category.append(
+                  { 
+                   'id': s.id,
+                   'name': s.sub_category,
+                   'description': s.description,
+                   'category':c.category,
+                   'service':service_obj.service,
+                   'price':s.price,   
+                   }
+                )
+        
+
+
 
       
-      return JsonResponse(sub_category_details,safe=False)
+      return JsonResponse(sub_category,safe=False)
   

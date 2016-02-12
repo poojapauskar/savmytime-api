@@ -64,10 +64,11 @@ class CustomListView(ListView):
 
       import sys
       # print >> sys.stderr, service_id
-         
-      categories= Category.objects.filter(service_id__in=service_id)
+      # obj2= Category.objects.filter(service_id__in="85")
+      # print >> sys.stderr, obj2 
+      categories= Category.objects.filter(service_id=service_id)
       #tickets = Ticket.objects.filter(vz_id__in=contacts)
-      # print >> sys.stderr, objects
+      # print >> sys.stderr, categories
 
       category=[]
       
@@ -75,7 +76,7 @@ class CustomListView(ListView):
           #question=[]
           c_detail=Category.objects.get(id=c.id)
           #user_details=[]
-          sub_category_list=Sub_category.objects.filter(category_id=c.id).values('sub_category','id')
+          sub_category_list=Sub_category.objects.filter(category_id=c.id).values('sub_category','id','price','description')
           # print >> sys.stderr, sub_category_list
           # print >> sys.stderr, "----------"
 
@@ -93,6 +94,7 @@ class CustomListView(ListView):
                   { 
                    'id': c_detail.id,
                    'name': c_detail.category,
+                   'description': c_detail.description,
                    'sub_category_details':list(sub_category_list),  
                    }
                 )

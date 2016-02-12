@@ -15,7 +15,7 @@ class Get_detailsSerializer(serializers.ModelSerializer):
         
 
     	model = Category
-    	fields = ('category',)
+    	fields = ('category','description')
         
         # model = Ticket
         # fields = ('user_details','question', 'item', 'description','date_created','date_validity','ticket_id','vz_id')

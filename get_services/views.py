@@ -43,7 +43,7 @@ class CustomListView(ListView):
       # print >> sys.stderr, service_id
       
         
-      services= list(Services.objects.all().values('service','id'))
+      services= list(Services.objects.all().values('service','id','description','image'))
       #tickets = Ticket.objects.filter(vz_id__in=contacts)
       # print >> sys.stderr, objects
 

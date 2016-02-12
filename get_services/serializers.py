@@ -15,7 +15,7 @@ class Get_detailsSerializer(serializers.ModelSerializer):
         
 
     	model = Services
-    	fields = ('service','id')
+    	fields = ('service','id','description','image')
         
         # model = Ticket
         # fields = ('user_details','question', 'item', 'description','date_created','date_validity','ticket_id','vz_id')
