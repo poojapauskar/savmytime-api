@@ -5,7 +5,7 @@ from user_data.models import User_data
 class User_dataSerializer(serializers.ModelSerializer):
     class Meta:
         model = User_data
-        fields = ('id', 'name', 'phone', 'email','city','service','category','sub_category','is_admin','password')
+        fields = ('id', 'name', 'phone', 'email','address')
 
     def create(self, validated_data):
         """
@@ -19,23 +19,17 @@ class User_dataSerializer(serializers.ModelSerializer):
         sid = 'bitjini'
         token = '85dbbbc18dfaf078290eeee3c185ac6dfd8a208f'
 
-        def send_message(sid, token, sms_from, sms_to, sms_body):
-            return requests.post('https://twilix.exotel.in/v1/Accounts/{sid}/Sms/send.json'.format(sid=sid),
-            auth=(sid, token),
-            data={
-                'From': sms_from,
-                'To': sms_to,
-                'Body': sms_body
-            })
+        # def send_message(sid, token, sms_from, sms_to, sms_body):
+        #     return requests.post('https://twilix.exotel.in/v1/Accounts/{sid}/Sms/send.json'.format(sid=sid),
+        #     auth=(sid, token),
+        #     data={
+        #         'From': sms_from,
+        #         'To': sms_to,
+        #         'Body': sms_body
+        #     })
 
 
-        #if __name__ == '__main__':
-        # 'From' doesn't matter; For transactional, this will be replaced with your SenderId;
-        # For promotional, this will be ignored by the SMS gateway
-        # Incase you are wondering who Dr. Rajasekhar is http://en.wikipedia.org/wiki/Dr._Rajasekhar_(actor)
-
-        # msg="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone number provided is "+validated_data.get('phone')+" and the email address provided is "+validated_data.get('email')+"."
-        
+       
 
 
         import sys
@@ -57,14 +51,6 @@ class User_dataSerializer(serializers.ModelSerializer):
                 msg="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone number provided is "+validated_data.get('phone')+" and the email address provided is "+validated_data.get('email')+"."
         
 
-        # if (validated_data.get('name')==None & validated_data.get('email')==None): 
-        #         msg1="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME."
-        # if(validated_data.get('name')==None & validated_data.get('email')!=None):
-        #         msg1="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME. The email address provided is "+validated_data.get('email')+"."        
-        # if(validated_data.get('email')==None & validated_data.get('name')!=None):
-        #         msg1="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone address provided is "+validated_data.get('phone')+"."        
-        # if(validated_data.get('email')!=None & validated_data.get('name')!=None):
-        #         msg1="SAVMYTIME Service Request: "+validated_data.get('name')+" has requested a service from SAVMYTIME. The phone number provided is "+validated_data.get('phone')+" and the email address provided is "+validated_data.get('email')+"."
         import sys
         print >> sys.stderr, msg
 
@@ -72,12 +58,12 @@ class User_dataSerializer(serializers.ModelSerializer):
         # msg="SAVMYTIME Service Request: "+validated_data.get('phone')+" has requested a service from SAVMYTIME."
         
 
-        r = send_message(sid, token,
-            sms_from='09243422233',  # sms_from='8808891988',
-            sms_to=validated_data.get('phone'), # sms_to='9052161119',
-            sms_body=msg)
-        print r.status_code
-        pprint(r.json())
+        # r = send_message(sid, token,
+        #     sms_from='09243422233',  # sms_from='8808891988',
+        #     sms_to=validated_data.get('phone'), # sms_to='9052161119',
+        #     sms_body=msg)
+        # print r.status_code
+        # pprint(r.json())
 
 
         return User_data.objects.create(**validated_data)

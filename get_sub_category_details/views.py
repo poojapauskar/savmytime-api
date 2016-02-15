@@ -79,7 +79,7 @@ class CustomListView(ListView):
                   { 
                    'id': s.id,
                    'name': s.sub_category,
-                   'description': s.description,
+                   # 'description': s.description,
                    'category':c.category,
                    'service':service_obj.service,
                    'price':s.price,   

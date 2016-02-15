@@ -49,6 +49,8 @@ INSTALLED_APPS = (
     'is_admin_login',
     'get_services',
     'get_sub_category_details',
+    'transition',
+    'order',
 )
 
 MIDDLEWARE_CLASSES = (

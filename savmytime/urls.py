@@ -28,4 +28,6 @@ urlpatterns = [
     url(r'^', include('is_admin_login.urls')),
     url(r'^', include('get_services.urls')),
     url(r'^', include('get_sub_category_details.urls')),
+    url(r'^', include('transition.urls')),
+    url(r'^', include('order.urls')),
 ]
