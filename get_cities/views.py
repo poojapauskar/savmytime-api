@@ -41,40 +41,12 @@ class CustomListView(ListView):
 
       import sys
       # print >> sys.stderr, service_id
-      id1=self.kwargs['city_id']
-      objects=list(Cities.objects.filter(id=id1).values_list('service_list'))
-      # print >> sys.stderr, objects
-
-      objects2=str(objects).replace('["','').replace('"]','').replace(',','').replace('[','').replace(']','').replace("'",'').replace('(','').replace(')','')
       
-      # print >> sys.stderr, "objects2"
-
-      objects2= objects2.split()
-      # objects2=objects2.replace('[','')
-      print >> sys.stderr, objects2
-
-      import json
-
-      # objects3=[86, 87,];
-      # print >> sys.stderr, "objects3"
-      # print >> sys.stderr, objects3
-
-      # import json
-      services=list(Services.objects.filter(id__in=objects2).values('service','id','description','image'))
-
-      # list1=Services.objects.filter(id__in=(objects2)).values('service','id')
-      # print list1.query
-      print >> sys.stderr, services
-
-
-
-
-
-
-      # services= list(Services.objects.all().values('service','id','description','image'))
+        
+      cities= list(Cities.objects.all().values('city','id','service_list'))
       #tickets = Ticket.objects.filter(vz_id__in=contacts)
       # print >> sys.stderr, objects
 
       
-      return JsonResponse(services,safe=False)
+      return JsonResponse(cities,safe=False)
   

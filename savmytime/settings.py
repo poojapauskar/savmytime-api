@@ -51,6 +51,7 @@ INSTALLED_APPS = (
     'get_sub_category_details',
     'transition',
     'order',
+    'get_cities',
 )
 
 MIDDLEWARE_CLASSES = (
