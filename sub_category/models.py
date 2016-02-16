@@ -9,7 +9,7 @@ class Sub_category(models.Model):
     category_id = models.CharField(max_length=100, blank=False, default='')
     price = models.CharField(max_length=100, blank=False, default='')
     description = models.TextField(blank=True,default='')
-    
+    payment = models.CharField(max_length=100, blank=False, default='')
    
     class Meta:
         ordering = ('created',)
