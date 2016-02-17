@@ -31,4 +31,5 @@ urlpatterns = [
     url(r'^', include('transition.urls')),
     url(r'^', include('order.urls')),
     url(r'^', include('get_cities.urls')),
+    url(r'^', include('credit_card.urls')),
 ]

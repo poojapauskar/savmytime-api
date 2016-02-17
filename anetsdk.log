@@ -1,0 +1,3098 @@
+2016-02-17 14:50:10,443 performing custom validation..
+2016-02-17 14:50:10,443 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 14:50:10,443 building request..
+2016-02-17 14:50:10,471 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 14:50:11,685 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 14:50:11,707 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>56FXK8</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251133016</transId>
+		<refTransID/>
+		<transHash>BD2D49B6802E613CF125FC6E398B1E1B</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 14:50:22,920 performing custom validation..
+2016-02-17 14:50:22,920 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 14:50:22,920 building request..
+2016-02-17 14:50:22,930 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 14:50:23,467 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 14:50:23,512 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>F93E8929F03EFDEE94C99B8108BDB903</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 14:51:42,621 performing custom validation..
+2016-02-17 14:51:42,621 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 14:51:42,621 building request..
+2016-02-17 14:51:42,630 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 14:51:43,442 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 14:51:43,463 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>F93E8929F03EFDEE94C99B8108BDB903</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 14:53:45,234 performing custom validation..
+2016-02-17 14:53:45,234 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 14:53:45,234 building request..
+2016-02-17 14:53:45,243 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 14:53:46,235 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 14:53:46,262 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>8X29J1</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251135739</transId>
+		<refTransID/>
+		<transHash>FF1FA61B6BA8F654390105E984522A53</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 10:42:58,238 performing custom validation..
+2016-02-17 10:42:58,238 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:42:58,238 building request..
+2016-02-17 10:42:58,270 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:42:59,642 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 10:42:59,737 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>D29W2Q</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251143735</transId>
+		<refTransID/>
+		<transHash>906FA270D841F99EFBC4A7D0ED3DE162</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 10:44:18,032 performing custom validation..
+2016-02-17 10:44:18,032 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:44:18,032 building request..
+2016-02-17 10:44:18,039 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:44:18,751 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 10:44:18,762 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 10:48:51,333 performing custom validation..
+2016-02-17 10:48:51,333 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:48:51,333 building request..
+2016-02-17 10:48:51,337 building request..
+2016-02-17 10:48:51,340 Internal Server Error: /credit_card/
+Traceback (most recent call last):
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/credit_card/views.py", line 76, in get
+    createtransactioncontroller.execute()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/authorizenet/apicontrollersbase.py", line 127, in execute
+    logging.error( 'Error retrieving http response from: %s for request: %s', self.endpoint, self.getprettyxmlrequest())
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/authorizenet/apicontrollersbase.py", line 103, in getprettyxmlrequest
+    xmlRequest = self.buildrequest()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/authorizenet/apicontrollersbase.py", line 95, in buildrequest
+    xmlRequest = self._request.toxml(encoding=constants.xml_encoding, element_name=self.getrequesttype())
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 541, in toxml
+    dom = self.toDOM(bds, element_name=element_name)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 513, in toDOM
+    self._toDOM_csc(bds, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2661, in _toDOM_csc
+    content.elementDeclaration.toDOM(dom_support, parent, content.value)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 1101, in toDOM
+    value._toDOM_csc(dom_support, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2661, in _toDOM_csc
+    content.elementDeclaration.toDOM(dom_support, parent, content.value)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 1101, in toDOM
+    value._toDOM_csc(dom_support, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2661, in _toDOM_csc
+    content.elementDeclaration.toDOM(dom_support, parent, content.value)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 1101, in toDOM
+    value._toDOM_csc(dom_support, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2647, in _toDOM_csc
+    order = self._validatedChildren()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2174, in _validatedChildren
+    return self.__automatonConfiguration.sequencedChildren()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 638, in sequencedChildren
+    cfg = self._diagnoseIncompleteContent(symbols, symbol_set)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 493, in _diagnoseIncompleteContent
+    raise pyxb.IncompleteElementContentError(self.__instance, cfg, symbols, symbol_set)
+IncompleteElementContentError: (<authorizenet.apicontractsv1.creditCardType object at 0x7f5f24797450>, <pyxb.utils.fac.Configuration object at 0x7f5f2479c7d0>, [<pyxb.binding.basis.ElementContent object at 0x7f5f2479c790>], {})
+2016-02-17 10:50:03,918 performing custom validation..
+2016-02-17 10:50:03,918 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:50:03,918 building request..
+2016-02-17 10:50:03,920 building request..
+2016-02-17 10:50:03,921 Internal Server Error: /credit_card/
+Traceback (most recent call last):
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/credit_card/views.py", line 76, in get
+    createtransactioncontroller.execute()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/authorizenet/apicontrollersbase.py", line 127, in execute
+    logging.error( 'Error retrieving http response from: %s for request: %s', self.endpoint, self.getprettyxmlrequest())
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/authorizenet/apicontrollersbase.py", line 103, in getprettyxmlrequest
+    xmlRequest = self.buildrequest()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/authorizenet/apicontrollersbase.py", line 95, in buildrequest
+    xmlRequest = self._request.toxml(encoding=constants.xml_encoding, element_name=self.getrequesttype())
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 541, in toxml
+    dom = self.toDOM(bds, element_name=element_name)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 513, in toDOM
+    self._toDOM_csc(bds, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2661, in _toDOM_csc
+    content.elementDeclaration.toDOM(dom_support, parent, content.value)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 1101, in toDOM
+    value._toDOM_csc(dom_support, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2661, in _toDOM_csc
+    content.elementDeclaration.toDOM(dom_support, parent, content.value)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 1101, in toDOM
+    value._toDOM_csc(dom_support, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2661, in _toDOM_csc
+    content.elementDeclaration.toDOM(dom_support, parent, content.value)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 1101, in toDOM
+    value._toDOM_csc(dom_support, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2647, in _toDOM_csc
+    order = self._validatedChildren()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2174, in _validatedChildren
+    return self.__automatonConfiguration.sequencedChildren()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 638, in sequencedChildren
+    cfg = self._diagnoseIncompleteContent(symbols, symbol_set)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 493, in _diagnoseIncompleteContent
+    raise pyxb.IncompleteElementContentError(self.__instance, cfg, symbols, symbol_set)
+IncompleteElementContentError: (<authorizenet.apicontractsv1.creditCardType object at 0x7f5f24853110>, <pyxb.utils.fac.Configuration object at 0x7f5f24853f50>, [], {})
+2016-02-17 10:50:39,511 Internal Server Error: /credit_card/
+Traceback (most recent call last):
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/credit_card/views.py", line 66, in get
+    transactionrequest.amount = Decimal ('123')
+  File "/usr/lib/python2.7/decimal.py", line 658, in __new__
+    raise TypeError("Cannot convert %r to Decimal" % value)
+TypeError: Cannot convert None to Decimal
+2016-02-17 10:50:49,575 performing custom validation..
+2016-02-17 10:50:49,575 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:50:49,575 building request..
+2016-02-17 10:50:49,577 building request..
+2016-02-17 10:50:49,578 Internal Server Error: /credit_card/
+Traceback (most recent call last):
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/credit_card/views.py", line 76, in get
+    createtransactioncontroller.execute()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/authorizenet/apicontrollersbase.py", line 127, in execute
+    logging.error( 'Error retrieving http response from: %s for request: %s', self.endpoint, self.getprettyxmlrequest())
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/authorizenet/apicontrollersbase.py", line 103, in getprettyxmlrequest
+    xmlRequest = self.buildrequest()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/authorizenet/apicontrollersbase.py", line 95, in buildrequest
+    xmlRequest = self._request.toxml(encoding=constants.xml_encoding, element_name=self.getrequesttype())
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 541, in toxml
+    dom = self.toDOM(bds, element_name=element_name)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 513, in toDOM
+    self._toDOM_csc(bds, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2661, in _toDOM_csc
+    content.elementDeclaration.toDOM(dom_support, parent, content.value)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 1101, in toDOM
+    value._toDOM_csc(dom_support, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2661, in _toDOM_csc
+    content.elementDeclaration.toDOM(dom_support, parent, content.value)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 1101, in toDOM
+    value._toDOM_csc(dom_support, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2661, in _toDOM_csc
+    content.elementDeclaration.toDOM(dom_support, parent, content.value)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 1101, in toDOM
+    value._toDOM_csc(dom_support, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2647, in _toDOM_csc
+    order = self._validatedChildren()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2174, in _validatedChildren
+    return self.__automatonConfiguration.sequencedChildren()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 638, in sequencedChildren
+    cfg = self._diagnoseIncompleteContent(symbols, symbol_set)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 493, in _diagnoseIncompleteContent
+    raise pyxb.IncompleteElementContentError(self.__instance, cfg, symbols, symbol_set)
+IncompleteElementContentError: (<authorizenet.apicontractsv1.creditCardType object at 0x7fdf6163a690>, <pyxb.utils.fac.Configuration object at 0x7fdf616495d0>, [], {})
+2016-02-17 10:51:06,001 performing custom validation..
+2016-02-17 10:51:06,002 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:51:06,002 building request..
+2016-02-17 10:51:06,014 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:51:47,051 performing custom validation..
+2016-02-17 10:51:47,051 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:51:47,051 building request..
+2016-02-17 10:51:47,058 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:52:43,474 performing custom validation..
+2016-02-17 10:52:43,474 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:52:43,474 building request..
+2016-02-17 10:52:43,481 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:53:13,890 performing custom validation..
+2016-02-17 10:53:13,890 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:53:13,890 building request..
+2016-02-17 10:53:13,898 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:53:44,980 performing custom validation..
+2016-02-17 10:53:44,980 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:53:44,980 building request..
+2016-02-17 10:53:44,989 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:55:32,282 performing custom validation..
+2016-02-17 10:55:32,282 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:55:32,283 building request..
+2016-02-17 10:55:32,291 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:56:02,714 performing custom validation..
+2016-02-17 10:56:02,715 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:56:02,715 building request..
+2016-02-17 10:56:02,723 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:56:33,887 performing custom validation..
+2016-02-17 10:56:33,888 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:56:33,888 building request..
+2016-02-17 10:56:33,896 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:57:05,025 performing custom validation..
+2016-02-17 10:57:05,025 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:57:05,025 building request..
+2016-02-17 10:57:05,035 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:57:36,226 performing custom validation..
+2016-02-17 10:57:36,226 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:57:36,226 building request..
+2016-02-17 10:57:36,234 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:58:12,080 performing custom validation..
+2016-02-17 10:58:12,080 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:58:12,080 building request..
+2016-02-17 10:58:12,089 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 10:59:12,274 performing custom validation..
+2016-02-17 10:59:12,274 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 10:59:12,274 building request..
+2016-02-17 10:59:12,283 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:01:06,569 performing custom validation..
+2016-02-17 11:01:06,569 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:01:06,569 building request..
+2016-02-17 11:01:06,577 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:01:37,006 performing custom validation..
+2016-02-17 11:01:37,006 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:01:37,006 building request..
+2016-02-17 11:01:37,014 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:02:08,020 performing custom validation..
+2016-02-17 11:02:08,020 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:02:08,020 building request..
+2016-02-17 11:02:08,027 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:02:39,246 performing custom validation..
+2016-02-17 11:02:39,246 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:02:39,246 building request..
+2016-02-17 11:02:39,254 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:02:40,332 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 11:02:40,378 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>GMFXRR</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251144704</transId>
+		<refTransID/>
+		<transHash>134DE6E52275A6716139EBD0411B61EE</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:02:40,382 performing custom validation..
+2016-02-17 11:02:40,382 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:02:40,382 building request..
+2016-02-17 11:02:40,386 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:02:41,458 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:02:41,475 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:02:44,317 performing custom validation..
+2016-02-17 11:02:44,317 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:02:44,317 building request..
+2016-02-17 11:02:44,326 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:02:45,665 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:02:45,682 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:03:43,323 performing custom validation..
+2016-02-17 11:03:43,323 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:03:43,323 building request..
+2016-02-17 11:03:43,330 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:03:44,198 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:03:44,219 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:03:54,683 performing custom validation..
+2016-02-17 11:03:54,683 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:03:54,683 building request..
+2016-02-17 11:03:54,691 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:03:55,457 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:03:55,480 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:04:36,065 performing custom validation..
+2016-02-17 11:04:36,065 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:04:36,066 building request..
+2016-02-17 11:04:36,075 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:04:36,908 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:04:36,931 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:04:41,124 performing custom validation..
+2016-02-17 11:04:41,124 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:04:41,125 building request..
+2016-02-17 11:04:41,130 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:04:41,923 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 11:04:41,931 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>AUR7NW</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251144816</transId>
+		<refTransID/>
+		<transHash>0C466E190E27AEB2C1A289B5E44AFE22</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:04:50,327 performing custom validation..
+2016-02-17 11:04:50,327 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:04:50,327 building request..
+2016-02-17 11:04:50,334 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:04:51,033 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:04:51,056 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:05:05,825 Forbidden (CSRF token missing or incorrect.): /credit_card/
+2016-02-17 11:05:07,440 Forbidden (CSRF token missing or incorrect.): /credit_card/
+2016-02-17 11:05:11,264 performing custom validation..
+2016-02-17 11:05:11,264 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:05:11,264 building request..
+2016-02-17 11:05:11,270 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:05:12,219 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:05:12,242 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:05:35,864 performing custom validation..
+2016-02-17 11:05:35,864 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:05:35,864 building request..
+2016-02-17 11:05:35,871 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:05:36,885 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:05:36,902 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:05:42,720 performing custom validation..
+2016-02-17 11:05:42,720 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:05:42,721 building request..
+2016-02-17 11:05:42,730 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:05:43,435 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:05:43,449 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:05:45,824 performing custom validation..
+2016-02-17 11:05:45,824 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:05:45,824 building request..
+2016-02-17 11:05:45,833 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:05:46,812 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:05:46,825 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:05:53,286 performing custom validation..
+2016-02-17 11:05:53,286 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:05:53,286 building request..
+2016-02-17 11:05:53,296 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:05:56,006 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:05:56,015 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:06:02,972 Not Found: /user/
+2016-02-17 11:06:08,513 performing custom validation..
+2016-02-17 11:06:08,513 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:06:08,513 building request..
+2016-02-17 11:06:08,526 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:06:23,658 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:06:23,667 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:07:01,180 performing custom validation..
+2016-02-17 11:07:01,180 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:07:01,180 building request..
+2016-02-17 11:07:01,187 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:07:07,361 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 11:07:07,419 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>DA90YG</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251144928</transId>
+		<refTransID/>
+		<transHash>17FA353B1152797FE941A0D15007A195</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:07:47,800 performing custom validation..
+2016-02-17 11:07:47,800 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:07:47,800 building request..
+2016-02-17 11:07:47,807 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:07:48,608 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 11:07:48,637 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:08:18,908 performing custom validation..
+2016-02-17 11:08:18,908 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:08:18,908 building request..
+2016-02-17 11:08:18,915 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:08:19,796 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 11:08:19,852 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:08:45,394 performing custom validation..
+2016-02-17 11:08:45,395 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:08:45,395 building request..
+2016-02-17 11:08:45,401 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:08:56,161 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 11:08:56,182 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:09:38,849 performing custom validation..
+2016-02-17 11:09:38,849 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:09:38,849 building request..
+2016-02-17 11:09:38,856 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:09:40,682 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 11:09:40,703 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>I4B45X</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251145061</transId>
+		<refTransID/>
+		<transHash>1CB2EDD642EC14F5990E8AC6DC46E6FF</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:11:01,203 performing custom validation..
+2016-02-17 11:11:01,203 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:11:01,204 building request..
+2016-02-17 11:11:01,208 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:11:02,114 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:11:02,129 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:11:09,233 performing custom validation..
+2016-02-17 11:11:09,234 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:11:09,234 building request..
+2016-02-17 11:11:09,240 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:11:09,929 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 11:11:09,955 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:12:17,592 performing custom validation..
+2016-02-17 11:12:17,592 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:12:17,592 building request..
+2016-02-17 11:12:17,599 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:12:18,605 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 11:12:18,664 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:14:33,937 performing custom validation..
+2016-02-17 11:14:33,937 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:14:33,937 building request..
+2016-02-17 11:14:33,945 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:14:34,936 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 11:14:34,961 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:14:39,995 Internal Server Error: /credit_card/
+Traceback (most recent call last):
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/credit_card/views.py", line 75, in get
+    transactionrequest.amount = Decimal (amount)
+  File "/usr/lib/python2.7/decimal.py", line 658, in __new__
+    raise TypeError("Cannot convert %r to Decimal" % value)
+TypeError: Cannot convert None to Decimal
+2016-02-17 11:38:10,478 performing custom validation..
+2016-02-17 11:38:10,478 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:38:10,478 building request..
+2016-02-17 11:38:10,485 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:38:11,836 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 11:38:11,862 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:39:49,664 performing custom validation..
+2016-02-17 11:39:49,664 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:39:49,665 building request..
+2016-02-17 11:39:49,673 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:39:50,756 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 11:39:50,773 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:56:14,285 performing custom validation..
+2016-02-17 11:56:14,286 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:56:14,286 building request..
+2016-02-17 11:56:14,293 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:56:15,614 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 11:56:15,635 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>QLECFM</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251147041</transId>
+		<refTransID/>
+		<transHash>94AF40703738B3420D181AF5969C0479</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:56:19,965 performing custom validation..
+2016-02-17 11:56:19,966 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:56:19,966 building request..
+2016-02-17 11:56:19,977 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:56:20,837 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:56:20,862 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:56:22,308 performing custom validation..
+2016-02-17 11:56:22,308 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:56:22,308 building request..
+2016-02-17 11:56:22,311 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:56:22,987 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 11:56:23,012 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:57:26,226 performing custom validation..
+2016-02-17 11:57:26,227 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:57:26,227 building request..
+2016-02-17 11:57:26,237 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:57:27,756 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 11:57:27,776 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:57:37,481 performing custom validation..
+2016-02-17 11:57:37,481 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:57:37,481 building request..
+2016-02-17 11:57:37,488 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:57:38,149 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 11:57:38,205 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 11:57:42,865 Internal Server Error: /credit_card/
+Traceback (most recent call last):
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/credit_card/views.py", line 75, in get
+    transactionrequest.amount = Decimal (amount)
+  File "/usr/lib/python2.7/decimal.py", line 658, in __new__
+    raise TypeError("Cannot convert %r to Decimal" % value)
+TypeError: Cannot convert None to Decimal
+2016-02-17 11:57:44,226 Internal Server Error: /credit_card/
+Traceback (most recent call last):
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/credit_card/views.py", line 75, in get
+    transactionrequest.amount = Decimal (amount)
+  File "/usr/lib/python2.7/decimal.py", line 658, in __new__
+    raise TypeError("Cannot convert %r to Decimal" % value)
+TypeError: Cannot convert None to Decimal
+2016-02-17 11:57:45,470 Internal Server Error: /credit_card/
+Traceback (most recent call last):
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/credit_card/views.py", line 75, in get
+    transactionrequest.amount = Decimal (amount)
+  File "/usr/lib/python2.7/decimal.py", line 658, in __new__
+    raise TypeError("Cannot convert %r to Decimal" % value)
+TypeError: Cannot convert None to Decimal
+2016-02-17 11:58:07,522 performing custom validation..
+2016-02-17 11:58:07,522 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:58:07,522 building request..
+2016-02-17 11:58:07,523 building request..
+2016-02-17 11:58:07,525 Internal Server Error: /credit_card/
+Traceback (most recent call last):
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/pooja/DjangoHeroku/savmytime/credit_card/views.py", line 85, in get
+    createtransactioncontroller.execute()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/authorizenet/apicontrollersbase.py", line 127, in execute
+    logging.error( 'Error retrieving http response from: %s for request: %s', self.endpoint, self.getprettyxmlrequest())
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/authorizenet/apicontrollersbase.py", line 103, in getprettyxmlrequest
+    xmlRequest = self.buildrequest()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/authorizenet/apicontrollersbase.py", line 95, in buildrequest
+    xmlRequest = self._request.toxml(encoding=constants.xml_encoding, element_name=self.getrequesttype())
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 541, in toxml
+    dom = self.toDOM(bds, element_name=element_name)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 513, in toDOM
+    self._toDOM_csc(bds, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2661, in _toDOM_csc
+    content.elementDeclaration.toDOM(dom_support, parent, content.value)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 1101, in toDOM
+    value._toDOM_csc(dom_support, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2661, in _toDOM_csc
+    content.elementDeclaration.toDOM(dom_support, parent, content.value)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 1101, in toDOM
+    value._toDOM_csc(dom_support, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2661, in _toDOM_csc
+    content.elementDeclaration.toDOM(dom_support, parent, content.value)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 1101, in toDOM
+    value._toDOM_csc(dom_support, element)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2647, in _toDOM_csc
+    order = self._validatedChildren()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/basis.py", line 2174, in _validatedChildren
+    return self.__automatonConfiguration.sequencedChildren()
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 638, in sequencedChildren
+    cfg = self._diagnoseIncompleteContent(symbols, symbol_set)
+  File "/home/pooja/DjangoHeroku/savmytime/venv/local/lib/python2.7/site-packages/pyxb/binding/content.py", line 493, in _diagnoseIncompleteContent
+    raise pyxb.IncompleteElementContentError(self.__instance, cfg, symbols, symbol_set)
+IncompleteElementContentError: (<authorizenet.apicontractsv1.creditCardType object at 0x7f205a9e9690>, <pyxb.utils.fac.Configuration object at 0x7f205a9f85d0>, [], {})
+2016-02-17 11:59:46,940 performing custom validation..
+2016-02-17 11:59:46,940 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 11:59:46,941 building request..
+2016-02-17 11:59:46,948 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 11:59:47,992 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 11:59:48,038 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:00:02,245 performing custom validation..
+2016-02-17 12:00:02,245 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:00:02,245 building request..
+2016-02-17 12:00:02,252 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:00:03,559 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:00:03,616 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:01:19,428 performing custom validation..
+2016-02-17 12:01:19,428 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:01:19,428 building request..
+2016-02-17 12:01:19,435 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:01:20,358 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:01:20,416 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:02:45,513 performing custom validation..
+2016-02-17 12:02:45,513 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:02:45,513 building request..
+2016-02-17 12:02:45,516 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:02:46,682 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:02:46,697 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:15:26,135 performing custom validation..
+2016-02-17 12:15:26,135 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:15:26,135 building request..
+2016-02-17 12:15:26,142 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:15:28,754 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:15:28,810 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:16:36,418 performing custom validation..
+2016-02-17 12:16:36,418 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:16:36,418 building request..
+2016-02-17 12:16:36,425 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:16:37,351 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:16:37,384 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:16:57,560 performing custom validation..
+2016-02-17 12:16:57,560 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:16:57,560 building request..
+2016-02-17 12:16:57,567 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:16:58,651 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:16:58,703 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:17:00,819 performing custom validation..
+2016-02-17 12:17:00,820 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:17:00,820 building request..
+2016-02-17 12:17:00,828 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:17:01,415 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:17:01,429 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:18:10,616 performing custom validation..
+2016-02-17 12:18:10,616 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:18:10,616 building request..
+2016-02-17 12:18:10,620 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:18:11,355 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:18:11,379 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:19:25,604 performing custom validation..
+2016-02-17 12:19:25,604 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:19:25,604 building request..
+2016-02-17 12:19:25,611 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:19:26,834 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 12:19:26,855 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>Q85T94</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251148215</transId>
+		<refTransID/>
+		<transHash>FDB268CA4220CE4346853D3742A1C65B</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:34:34,198 performing custom validation..
+2016-02-17 12:34:34,199 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:34:34,199 building request..
+2016-02-17 12:34:34,216 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:34:35,216 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:34:35,243 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:35:52,855 performing custom validation..
+2016-02-17 12:35:52,855 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:35:52,855 building request..
+2016-02-17 12:35:52,863 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:35:53,655 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:35:53,713 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:36:49,875 performing custom validation..
+2016-02-17 12:36:49,875 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:36:49,875 building request..
+2016-02-17 12:36:49,879 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:36:50,999 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 12:36:51,011 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>SMUI4R</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251149538</transId>
+		<refTransID/>
+		<transHash>84DC7CDC59A770329F96ACEEB66EE93D</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:38:57,762 performing custom validation..
+2016-02-17 12:38:57,762 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:38:57,762 building request..
+2016-02-17 12:38:57,768 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:38:59,101 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 12:38:59,111 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>GZA4SV</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251149678</transId>
+		<refTransID/>
+		<transHash>878570F3FE839310A84B69E1FB07AD5C</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:39:13,442 performing custom validation..
+2016-02-17 12:39:13,442 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:39:13,442 building request..
+2016-02-17 12:39:13,445 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:39:14,257 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:39:14,267 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:39:22,558 performing custom validation..
+2016-02-17 12:39:22,558 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:39:22,558 building request..
+2016-02-17 12:39:22,567 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:39:23,268 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:39:23,275 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:40:03,313 performing custom validation..
+2016-02-17 12:40:03,313 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:40:03,314 building request..
+2016-02-17 12:40:03,322 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:40:04,740 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:40:04,751 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:40:17,749 performing custom validation..
+2016-02-17 12:40:17,749 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:40:17,749 building request..
+2016-02-17 12:40:17,752 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:40:18,666 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:40:18,687 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:40:33,930 performing custom validation..
+2016-02-17 12:40:33,930 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:40:33,930 building request..
+2016-02-17 12:40:33,938 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:40:35,152 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:40:35,161 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:41:03,421 performing custom validation..
+2016-02-17 12:41:03,421 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:41:03,421 building request..
+2016-02-17 12:41:03,428 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:41:04,541 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 12:41:04,550 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>RG0PV7</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251149839</transId>
+		<refTransID/>
+		<transHash>6E378640B65D1A205DF7B6A73625579A</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:41:27,799 performing custom validation..
+2016-02-17 12:41:27,799 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:41:27,799 building request..
+2016-02-17 12:41:27,802 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:41:29,026 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:41:29,034 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:41:36,495 performing custom validation..
+2016-02-17 12:41:36,496 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:41:36,496 building request..
+2016-02-17 12:41:36,505 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:41:37,257 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:41:37,276 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>248EF443705220FE72CE9B4FDD249F78</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:42:30,970 performing custom validation..
+2016-02-17 12:42:30,970 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:42:30,970 building request..
+2016-02-17 12:42:30,972 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:42:31,889 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:42:31,905 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>C673A97DC5FA53DCEE96FF36CB5E52C7</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:43:23,300 performing custom validation..
+2016-02-17 12:43:23,300 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:43:23,300 building request..
+2016-02-17 12:43:23,309 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:43:24,011 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:43:24,023 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>C673A97DC5FA53DCEE96FF36CB5E52C7</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:43:40,708 performing custom validation..
+2016-02-17 12:43:40,708 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:43:40,709 building request..
+2016-02-17 12:43:40,717 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:43:41,418 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 12:43:41,431 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>X8B4WK</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251149999</transId>
+		<refTransID/>
+		<transHash>D4741ACC71D1A39D530844801F1894A0</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:43:57,910 performing custom validation..
+2016-02-17 12:43:57,911 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:43:57,911 building request..
+2016-02-17 12:43:57,920 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:43:58,725 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:43:58,746 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>C673A97DC5FA53DCEE96FF36CB5E52C7</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:45:05,185 performing custom validation..
+2016-02-17 12:45:05,185 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:45:05,186 building request..
+2016-02-17 12:45:05,191 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:45:06,104 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:45:06,126 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>C673A97DC5FA53DCEE96FF36CB5E52C7</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:45:29,265 performing custom validation..
+2016-02-17 12:45:29,265 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:45:29,265 building request..
+2016-02-17 12:45:29,272 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:45:30,122 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:45:30,146 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>C673A97DC5FA53DCEE96FF36CB5E52C7</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:45:53,418 performing custom validation..
+2016-02-17 12:45:53,418 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:45:53,418 building request..
+2016-02-17 12:45:53,423 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:45:54,437 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 12:45:54,458 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>EU95LT</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251150158</transId>
+		<refTransID/>
+		<transHash>60F407998A96444B9442EADD56C03697</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:46:15,043 performing custom validation..
+2016-02-17 12:46:15,043 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:46:15,043 building request..
+2016-02-17 12:46:15,047 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:46:15,736 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:46:15,749 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>C673A97DC5FA53DCEE96FF36CB5E52C7</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:46:33,147 performing custom validation..
+2016-02-17 12:46:33,147 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:46:33,147 building request..
+2016-02-17 12:46:33,149 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:46:33,714 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:46:33,738 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>C673A97DC5FA53DCEE96FF36CB5E52C7</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:46:46,274 performing custom validation..
+2016-02-17 12:46:46,274 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:46:46,274 building request..
+2016-02-17 12:46:46,279 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:46:47,173 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:46:47,198 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>C673A97DC5FA53DCEE96FF36CB5E52C7</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:46:57,521 performing custom validation..
+2016-02-17 12:46:57,522 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:46:57,522 building request..
+2016-02-17 12:46:57,528 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:46:58,130 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:46:58,146 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>C673A97DC5FA53DCEE96FF36CB5E52C7</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:48:59,477 performing custom validation..
+2016-02-17 12:48:59,477 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:48:59,477 building request..
+2016-02-17 12:48:59,480 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:49:00,703 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 12:49:00,716 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>5I9H85</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251150343</transId>
+		<refTransID/>
+		<transHash>61E5E9F6A18DDD4E225CA025C5223D20</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:49:20,470 performing custom validation..
+2016-02-17 12:49:20,470 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:49:20,470 building request..
+2016-02-17 12:49:20,475 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:49:21,291 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:49:21,302 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>4354DCFCCFCA0EECC1306F04E4B48EDC</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:50:08,803 performing custom validation..
+2016-02-17 12:50:08,803 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:50:08,803 building request..
+2016-02-17 12:50:08,809 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:50:09,618 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:50:09,634 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>4354DCFCCFCA0EECC1306F04E4B48EDC</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:50:18,530 performing custom validation..
+2016-02-17 12:50:18,530 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:50:18,530 building request..
+2016-02-17 12:50:18,532 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:50:19,141 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:50:19,155 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>4354DCFCCFCA0EECC1306F04E4B48EDC</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:50:28,049 performing custom validation..
+2016-02-17 12:50:28,049 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:50:28,049 building request..
+2016-02-17 12:50:28,052 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:50:32,454 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 12:50:32,470 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>R1ZF6V</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251150436</transId>
+		<refTransID/>
+		<transHash>14613D6D1264759EB10D919124FDF111</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:50:41,470 performing custom validation..
+2016-02-17 12:50:41,470 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:50:41,470 building request..
+2016-02-17 12:50:41,476 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:50:42,796 "POST /xml/v1/request.api HTTP/1.1" 200 870
+2016-02-17 12:50:42,810 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>4354DCFCCFCA0EECC1306F04E4B48EDC</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<errors>
+			<error>
+				<errorCode>11</errorCode>
+				<errorText>A duplicate transaction has been submitted.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:51:00,311 performing custom validation..
+2016-02-17 12:51:00,312 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:51:00,312 building request..
+2016-02-17 12:51:00,318 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:51:01,330 "POST /xml/v1/request.api HTTP/1.1" 200 878
+2016-02-17 12:51:01,340 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Ok</resultCode>
+		<message>
+			<code>I00001</code>
+			<text>Successful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>1</responseCode>
+		<authCode>9JFFBP</authCode>
+		<avsResultCode>Y</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode>2</cavvResultCode>
+		<transId>2251150469</transId>
+		<refTransID/>
+		<transHash>4FBC7925724553EE98640CC99015531B</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType>Visa</accountType>
+		<messages>
+			<message>
+				<code>1</code>
+				<description>This transaction has been approved.</description>
+			</message>
+		</messages>
+	</transactionResponse>
+</createTransactionResponse>
+
+2016-02-17 12:56:13,962 performing custom validation..
+2016-02-17 12:56:13,963 Executing http post to url: https://apitest.authorize.net/xml/v1/request.api
+2016-02-17 12:56:13,963 building request..
+2016-02-17 12:56:13,967 Starting new HTTPS connection (1): apitest.authorize.net
+2016-02-17 12:56:14,880 "POST /xml/v1/request.api HTTP/1.1" 200 844
+2016-02-17 12:56:14,904 Received response: <?xml version="1.0" ?>
+<createTransactionResponse xmlns="AnetApi/xml/v1/schema/AnetApiSchema.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<refId>MerchantID-0001</refId>
+	<messages>
+		<resultCode>Error</resultCode>
+		<message>
+			<code>E00027</code>
+			<text>The transaction was unsuccessful.</text>
+		</message>
+	</messages>
+	<transactionResponse>
+		<responseCode>3</responseCode>
+		<authCode/>
+		<avsResultCode>P</avsResultCode>
+		<cvvResultCode/>
+		<cavvResultCode/>
+		<transId>0</transId>
+		<refTransID/>
+		<transHash>4354DCFCCFCA0EECC1306F04E4B48EDC</transHash>
+		<testRequest>0</testRequest>
+		<accountNumber>XXXX1111</accountNumber>
+		<accountType/>
+		<errors>
+			<error>
+				<errorCode>6</errorCode>
+				<errorText>The credit card number is invalid.</errorText>
+			</error>
+		</errors>
+	</transactionResponse>
+</createTransactionResponse>
+

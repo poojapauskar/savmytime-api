@@ -52,6 +52,7 @@ INSTALLED_APPS = (
     'transition',
     'order',
     'get_cities',
+    'credit_card',
 )
 
 MIDDLEWARE_CLASSES = (
