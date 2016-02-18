@@ -99,6 +99,10 @@ class CustomListView(ListView):
   pprint(r.json())
 
 
+  from django.core.mail import send_mail
+  send_mail('SAVMYTIME: Confirm your Account.',msg, 'poojapauskar22@gmail.com', [email], fail_silently=False)
+
+
 
   
   details=[]
