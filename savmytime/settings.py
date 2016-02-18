@@ -53,6 +53,7 @@ INSTALLED_APPS = (
     'order',
     'get_cities',
     'credit_card',
+    'send_msg_mail',
 )
 
 MIDDLEWARE_CLASSES = (

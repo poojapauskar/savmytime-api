@@ -32,4 +32,5 @@ urlpatterns = [
     url(r'^', include('order.urls')),
     url(r'^', include('get_cities.urls')),
     url(r'^', include('credit_card.urls')),
+    url(r'^', include('send_msg_mail.urls')),
 ]
