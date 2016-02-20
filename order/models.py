@@ -9,6 +9,7 @@ class Order(models.Model):
     order_id = models.CharField(max_length=100, blank=False, default='')
     user_id = models.CharField(max_length=100, blank=False, default='')
     status = models.CharField(max_length=100, blank=False, default='')
+    required_date = models.CharField(max_length=100, blank=True, default='')
    
    
     class Meta:
