@@ -42,7 +42,7 @@ class CustomListView(ListView):
       import sys
       # print >> sys.stderr, service_id
       id1=self.kwargs['id']
-      objects=list(Cities.objects.filter(id=id1).values_list('city'))
+      objects=list(Cities.objects.filter(id=id1).values('city'))
       
       return JsonResponse(objects,safe=False)
   
