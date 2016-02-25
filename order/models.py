@@ -10,6 +10,7 @@ class Order(models.Model):
     user_id = models.CharField(max_length=100, blank=False, default='')
     status = models.CharField(max_length=100, blank=False, default='')
     required_date = models.CharField(max_length=100, blank=True, default='')
+    required_time = models.CharField(max_length=100, blank=True, default='')
    
    
     class Meta:
