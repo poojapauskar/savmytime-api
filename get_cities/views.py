@@ -47,6 +47,48 @@ class CustomListView(ListView):
       #tickets = Ticket.objects.filter(vz_id__in=contacts)
       # print >> sys.stderr, objects
 
+
+      # Services.objects.filter(service="Painting").update(icon="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id778289.png")
+      # Services.objects.filter(service="Painting").update(image="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id837972.png")
+
+      # Services.objects.filter(service="Plumbing").update(icon="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id601478.png")
+      # Services.objects.filter(service="Plumbing").update(image="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id134922.png")
+
+      # Services.objects.filter(service="Carpenter").update(icon="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id924248.png")
+      # Services.objects.filter(service="Carpenter").update(image="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id748457.png")
+
+      # Services.objects.filter(service="Electrician").update(icon="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id393438.png")
+      # Services.objects.filter(service="Electrician").update(image="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id692779.png")
+
+      # Services.objects.filter(service="C A Consult").update(icon="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id587536.png")
+      # Services.objects.filter(service="C A Consult").update(image="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id851553.png")
+
+
+      # Services.objects.filter(service="AC Repair").update(icon="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id504971.png")
+      # Services.objects.filter(service="AC Repair").update(image="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id103130.png")
+
+      # Services.objects.filter(service="Pest control").update(icon="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id446685.png")
+      # Services.objects.filter(service="Pest control").update(image="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id800524.png")
+
+      # Services.objects.filter(service="Security Solutions").update(icon="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id216321.png")
+      # Services.objects.filter(service="Security Solutions").update(image="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id208276.png")
+
+
+      # Services.objects.filter(service="Graphic Design").update(icon="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id166113.png")
+      # Services.objects.filter(service="Graphic Design").update(image="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id968958.png")
+
+
+      # Services.objects.filter(service="Digital Marketing").update(icon="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id568169.png")
+      # Services.objects.filter(service="Digital Marketing").update(image="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id190946.png")
+
+
+      # Services.objects.filter(service="Chartered Prop Care").update(icon="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id822584.png")
+      # Services.objects.filter(service="Chartered Prop Care").update(image="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id818583.png")
+
+
+      # Services.objects.filter(service="Laptop Servicing").update(icon="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id915046.png")
+      # Services.objects.filter(service="Laptop Servicing").update(image="http://res.cloudinary.com/htwoqvwuz/image/upload/savmytime/id393276.png")
+
       
       return JsonResponse(cities,safe=False)
   

@@ -118,6 +118,7 @@ class CustomListView(ListView):
                    'id': s_detail.id,
                    'name': s_detail.service,
                    'image':s_detail.image,
+                   'icon':s_detail.icon,
                    'description':s_detail.description,
                    'cities':cities,
                    'category':list(category),  

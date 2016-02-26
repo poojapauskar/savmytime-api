@@ -5,7 +5,7 @@ from services.models import Services
 class ServicesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Services
-        fields = ('id', 'service', 'image', 'description','created')
+        fields = ('id', 'service', 'image','icon', 'description','created')
 
     def create(self, validated_data):
         """

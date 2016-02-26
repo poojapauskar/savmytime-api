@@ -60,7 +60,7 @@ class CustomListView(ListView):
       # print >> sys.stderr, objects3
 
       # import json
-      services=list(Services.objects.filter(id__in=objects2).values('service','id','description','image'))
+      services=list(Services.objects.filter(id__in=objects2).values('service','id','description','image','icon'))
 
       # list1=Services.objects.filter(id__in=(objects2)).values('service','id')
       # print list1.query
