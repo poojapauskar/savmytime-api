@@ -52,14 +52,14 @@ class CustomListView(ListView):
   sid = 'bitjini'
   token = '85dbbbc18dfaf078290eeee3c185ac6dfd8a208f'
 
-  def send_message(sid, token, sms_from, sms_to, sms_body):
-	    return requests.post('https://twilix.exotel.in/v1/Accounts/{sid}/Sms/send.json'.format(sid=sid),
-	    auth=(sid, token),
-	    data={
-	        'From': sms_from,
-	        'To': sms_to,
-	        'Body': sms_body
-	    })
+  # def send_message(sid, token, sms_from, sms_to, sms_body):
+	 #    return requests.post('https://twilix.exotel.in/v1/Accounts/{sid}/Sms/send.json'.format(sid=sid),
+	 #    auth=(sid, token),
+	 #    data={
+	 #        'From': sms_from,
+	 #        'To': sms_to,
+	 #        'Body': sms_body
+	 #    })
 
 
 
@@ -91,16 +91,16 @@ class CustomListView(ListView):
   # msg="SAVMYTIME Service Request: "+phone+" has requested a service from SAVMYTIME."
 
 
-  r = send_message(sid, token,
-	    sms_from='09243422233',  # sms_from='8808891988',
-	    sms_to=phone, # sms_to='9052161119',
-	    sms_body=msg)
-  print r.status_code
-  pprint(r.json())
+  # r = send_message(sid, token,
+	 #    sms_from='09243422233',  # sms_from='8808891988',
+	 #    sms_to=phone, # sms_to='9052161119',
+	 #    sms_body=msg)
+  # print r.status_code
+  # pprint(r.json())
 
 
   from django.core.mail import send_mail
-  send_mail('SAVMYTIME: ',msg, 'poojapauskar22@gmail.com', [email], fail_silently=False)
+  send_mail('SAVMYTIME: ',msg, 'poojapauskar22@gmail.com', ['contact@bitjini.com'], fail_silently=False)
 
 
 
