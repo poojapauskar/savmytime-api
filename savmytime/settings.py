@@ -62,7 +62,7 @@ INSTALLED_APPS = (
     'credit_card',
     'send_msg_mail',
     'get_city_from_id',
-    'oauth2_provider',
+    # 'oauth2_provider',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -121,19 +121,18 @@ DATABASES = {
 }
 
 
-OAUTH2_PROVIDER = {
-    # this is the list of available scopes
-    'SCOPES': {'read': 'Read scope', 'write': 'Write scope', 'groups': 'Access to your groups'}
-}
+# OAUTH2_PROVIDER = {
+#     'SCOPES': {'read': 'Read scope', 'write': 'Write scope', 'groups': 'Access to your groups'}
+# }
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'oauth2_provider.ext.rest_framework.OAuth2Authentication',
-    ),
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    )
-}
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#         'oauth2_provider.ext.rest_framework.OAuth2Authentication',
+#     ),
+#     'DEFAULT_PERMISSION_CLASSES': (
+#         'rest_framework.permissions.IsAuthenticated',
+#     )
+# }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
