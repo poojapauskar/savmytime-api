@@ -20,6 +20,7 @@ from django.contrib import admin
 
 
 urlpatterns = [
+    url(r'^docs/', include('rest_framework_swagger.urls')),
     url(r'^', include('services.urls')),
     url(r'^', include('cities.urls')),
     url(r'^', include('category.urls')),

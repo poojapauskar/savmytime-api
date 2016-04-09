@@ -62,6 +62,7 @@ INSTALLED_APPS = (
     'credit_card',
     'send_msg_mail',
     'get_city_from_id',
+    'rest_framework_swagger',
     # 'oauth2_provider',
 )
 
