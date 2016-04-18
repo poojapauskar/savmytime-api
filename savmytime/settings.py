@@ -63,6 +63,7 @@ INSTALLED_APPS = (
     'send_msg_mail',
     'get_city_from_id',
     'rest_framework_swagger',
+    'edit_cities',
     # 'oauth2_provider',
 )
 

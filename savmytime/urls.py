@@ -38,4 +38,5 @@ urlpatterns = [
     url(r'^', include('credit_card.urls')),
     url(r'^', include('send_msg_mail.urls')),
     url(r'^', include('get_city_from_id.urls')),
+    url(r'^', include('edit_cities.urls')),
 ]
