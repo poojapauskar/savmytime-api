@@ -7,7 +7,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework.views import APIView
 
 class edit_cityList(APIView):
- def put(self, request, *args, **kwargs):
+ def put(self, request, format=None):
   Cities.objects.filter(id=request.data['id']).update(city=request.data['city'],service_list=request.data['list'])
     #   return validated_data
   details=[]
