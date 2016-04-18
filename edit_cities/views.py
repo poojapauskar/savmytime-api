@@ -4,7 +4,9 @@ from rest_framework import generics
 # from rest_framework import permissions
 from django.shortcuts import get_object_or_404
 
-class edit_cityList(generics.ListCreateAPIView):
+from rest_framework.views import APIView
+
+class edit_cityList(APIView):
  def put(self, request, *args, **kwargs):
   Cities.objects.filter(id=request.data['id']).update(city=request.data['city'],service_list=request.data['list'])
     #   return validated_data
@@ -40,6 +42,8 @@ def JSONResponse(data = None, status = StatusCode.OK):
 
 def get_queryset(request):
   from django.http import JsonResponse
+
+
   
   cities=list(Cities.objects.all().values('id','city','service_list'))
   return JsonResponse(cities,safe=False)
